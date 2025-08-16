@@ -25,11 +25,9 @@ if st.button('คำนวณ'):
             st.error('อ้วนมาก')
             st.image('B.png')
     
-            text = st.text_input('ข้อความ','คอวออายอ')
+            text = st.text_input('ข้อความ','คอคอ')
             mp3_fp = io.BytesIO()
-            tts.write_to_fp(mp3_fp)
-            mp3_fp.seek(0)
-            st.audio(mp3_fp, format='audio/mp3')
+            
     
 with colum1:
     if st.button('เพลง'):
@@ -37,6 +35,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
