@@ -13,10 +13,10 @@ if st.button('คำนวณ'):
         st.info('ผอม')
         st.image('A.png')
     elif bmi < 22.9 :
-        word('ปกติ')
+        st.success('ปกติ')
         st.image('https://cf.shopee.co.th/file/905f5cc2292c5e4fbe0dc0c1b24b4efb')
     elif bmi < 24.9 :
-        word('อ้วน1')
+        st.warring('อ้วน1')
         st.image('C.jpg')
     else :
         word('อ้วนมาก')
@@ -35,6 +35,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
