@@ -42,9 +42,9 @@ from pathlib import Path
 st.title("Botnoi Voice API Demo")
 
 API_URL = "https://api-voice.botnoi.ai/openapi/v1/generate_audio"
-API_TOKEN = "M3h3RncxMGUzd2gzb3haN1g5YkJheElOQ0pXMjU2MTg5NA=="
+API_TOKEN = "CcuBfdfdpAQroGIv62VRnCE8RQ1WaqhZ"
 
-text_input = st.text_input("ข้อความที่ต้องการแปลงเป็นเสียง", "สวัสดีครับ")
+text_input = st.text_input("ข้อความที่ต้องการแปลงเป็นเสียง", "สวัสดี")
 speaker_id = st.text_input("Speaker ID", "1")
 generate_btn = st.button("Generate Voice")
 
@@ -90,3 +90,4 @@ if generate_btn:
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาด: {e}")
+
