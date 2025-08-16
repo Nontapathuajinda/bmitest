@@ -4,6 +4,7 @@ st.set_page_config(page_title='Wellcome to my first Web Application',page_icon='
 colum1,colum2 = st.columns(2)
 kg = st.number_input('นํ้าหนัก (Kg):')
 cm = st.number_input('ส่วนสูง (Cm):')
+from gtts import gTTS
 import io
 if st.button('คำนวณ'):
     bmi=kg/(cm/100)**2
