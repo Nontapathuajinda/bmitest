@@ -7,7 +7,8 @@ cm = st.number_input('ส่วนสูง (Cm):')
 
 import io
 if st.button('คำนวณ'):
-    if bmi >0 :
+if cm >0 :
+if kg >0 :
     bmi=kg/(cm/100)**2
     st.write(f'ค่า BMI ของคุณคือ: **{bmi:.2f}**')
     
@@ -36,6 +37,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
