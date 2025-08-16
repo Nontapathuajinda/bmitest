@@ -10,7 +10,7 @@ if st.button('คำนวณ'):
     bmi=kg/(cm/100)**2
     st.write(f'ค่า BMI ของคุณคือ: **{bmi:.2f}**')
     if bmi <= 18.5 :
-        word('ผอม')
+        st.info('ผอม')
         st.image('A.png')
     elif bmi < 22.9 :
         word('ปกติ')
@@ -35,6 +35,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
