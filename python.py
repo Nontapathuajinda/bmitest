@@ -7,8 +7,10 @@ cm = st.number_input('ส่วนสูง (Cm):')
 
 import io
 if st.button('คำนวณ'):
+    if bmi >0 :
     bmi=kg/(cm/100)**2
     st.write(f'ค่า BMI ของคุณคือ: **{bmi:.2f}**')
+    
     if bmi <= 18.5 :
         st.info('ผอม')
         st.image('A.png')
@@ -23,7 +25,6 @@ if st.button('คำนวณ'):
         st.image('B.png')
 
         text = st.text_input('ข้อความ','คอวออายอ')
-        tts = gTTS(text=word, lang='th')
         mp3_fp = io.BytesIO()
         tts.write_to_fp(mp3_fp)
         mp3_fp.seek(0)
@@ -35,6 +36,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
