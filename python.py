@@ -14,7 +14,7 @@ if st.button('คำนวณ'):
         st.image('A.png')
     elif bmi < 22.9 :
         st.success('ปกติ')
-        st.image(aa.jpg')
+        st.image('aa.jpg')
     elif bmi < 24.9 :
         st.warning('อ้วน1')
         st.image('C.jpg')
@@ -35,6 +35,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
