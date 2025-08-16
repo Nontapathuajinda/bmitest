@@ -4,7 +4,7 @@ st.set_page_config(page_title='Wellcome to my first Web Application',page_icon='
 colum1,colum2 = st.columns(2)
 kg = st.number_input('นํ้าหนัก (Kg):')
 cm = st.number_input('ส่วนสูง (Cm):')
-from gtts import gTTS
+
 import io
 if st.button('คำนวณ'):
     bmi=kg/(cm/100)**2
@@ -16,10 +16,10 @@ if st.button('คำนวณ'):
         st.success('ปกติ')
         st.image('https://cf.shopee.co.th/file/905f5cc2292c5e4fbe0dc0c1b24b4efb')
     elif bmi < 24.9 :
-        st.warring('อ้วน1')
+        st.warning('อ้วน1')
         st.image('C.jpg')
     else :
-        word('อ้วนมาก')
+        st.error('อ้วนมาก')
         st.image('B.png')
 
         text = st.text_input('ข้อความ','คอวออายอ')
@@ -35,6 +35,7 @@ with colum1:
 with colum2:
     if st.button('เรื่องเล่า'):
         st.video('https://youtu.be/I4wKuwisRfQ?si=Xshn-lCbzL1vKbd4')
+
 
 
 
