@@ -5,6 +5,7 @@ colum1,colum2 = st.columns(2)
 kg = st.number_input('นํ้าหนัก (Kg):')
 cm = st.number_input('ส่วนสูง (Cm):')
 
+
 import io
 if st.button('คำนวณ'):
     if cm and kg > 0:
@@ -38,8 +39,6 @@ with colum2:
 import streamlit as st
 import requests
 from pathlib import Path
-
-st.title("Botnoi Voice API Demo")
 
 API_URL = "https://api-voice.botnoi.ai/openapi/v1/generate_audio"
 API_TOKEN = "CcuBfdfdpAQroGIv62VRnCE8RQ1WaqhZ"
@@ -90,4 +89,5 @@ if generate_btn:
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาด: {e}")
+
 
