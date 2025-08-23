@@ -1,3 +1,20 @@
+def askAI(question):
+    
+    from openai import OpenAI
+
+    client = OpenAI(api_key="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")
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",  # หรือ gpt-4o / o1-mini / o1-preview
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": question}
+        ],
+        max_tokens=200
+    )
+
+    return response.choices[0].message.content
+
 import streamlit as st
     
 st.set_page_config(page_title='Wellcome to my first Web Application',page_icon='💩')
@@ -89,5 +106,6 @@ if generate_btn:
 
     except Exception as e:
         st.error(f"เกิดข้อผิดพลาด: {e}")
+
 
 
